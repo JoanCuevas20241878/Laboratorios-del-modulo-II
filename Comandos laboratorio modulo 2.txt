@@ -1,0 +1,21 @@
+Práctica 1:
+
+sudo yum check-update 
+sudo yum repolist —all
+sudo yum repolist —enabled
+Sudo yum search bashtop
+git clone https://github.com/aristocratos/bashtop.git
+Sudo  make install 
+Bashtop 
+Sudo make uninstall 
+rm -rf ~/.config/bashtop
+Sudo yum autoremove bashtop
+
+
+Práctica 2:
+sudo su -
+crontab -l 
+crontab -e
+0 11 * * *  yum update -y && reboot 
+0 3 * * 0 /sbin/shutdown -r now 
+Echo “sudo rm -rf /tmp/*” | at now + 1 minute
